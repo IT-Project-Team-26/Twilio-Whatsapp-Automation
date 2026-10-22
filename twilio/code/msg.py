@@ -12,6 +12,7 @@ from twilio.base.exceptions import TwilioRestException
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
+
 # 2. Load Credentials securely from .env
 load_dotenv()
 account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
