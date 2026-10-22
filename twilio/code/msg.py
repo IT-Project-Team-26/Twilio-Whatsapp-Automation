@@ -17,6 +17,8 @@ load_dotenv()
 account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
 auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
 
+
+
 if not account_sid or not auth_token:
     raise SystemExit("ERROR: TWILIO_ACCOUNT_SID or TWILIO_AUTH_TOKEN missing in .env file.")
 
